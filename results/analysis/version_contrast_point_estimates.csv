@@ -1,0 +1,5 @@
+spec,HR,lo,hi,n_risk,events
+harmonized_v1,0.9574,0.92,0.9964,50897,13003
+harmonized_v1+yearFE,0.9622,0.9217,1.0045,50897,13003
+harmonized_v3,0.9528,0.9177,0.9893,46973,14656
+harmonized_v3+yearFE,0.964,0.9236,1.0061,46973,14656

@@ -1,0 +1,9 @@
+﻿role,spec,claim,claimed,actual_freeze,audit,note
+PRIMARY,"adjudicated (V3.0 explicit) production, no FE",adjudicated production HR 0.959 p=0.0498,0.959,0.959,PASS,manuscript definition; production-freeze audit PASS
+PRIMARY-FE,v3 + year FE (S-HARM spec),v3+FE HR 0.964 p=0.096,0.964,0.964,PASS,"0.964 (0.9236–1.0061)，n=46,973"
+SECONDARY,naive production + year FE,naive+FE HR 0.961 p=0.054,0.961,0.961,PASS,0.961 p=0.054
+SECONDARY,"naive production, no FE",naive production HR 0.959 p=0.043,0.959,0.959,PASS,0.959 p=0.043
+SECONDARY,spec-curve median (24 specs),spec-curve median HR 0.969 (24 specs),0.969,0.969,PASS,0.969
+SECONDARY,version ΔHR (yearFE),version ΔHR +0.0018 (yearFE),0.0018,0.0018,PASS,+0.0018; TOST ±5% passed at the production freeze
+FALSIFICATION-CONTROL,ST-T fullcov,ST-T fullcov HR 1.078 p=0.0077,1.078,1.078,PASS,1.078 p=0.0077(template-insensitive positive control)
+FALSIFICATION-CONTROL,ST-T +FE,ST-T +FE HR 1.074 p=0.0067,1.074,1.074,PASS,1.074 p=0.0067

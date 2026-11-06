@@ -1,0 +1,5 @@
+stratum,n_texts,naive_abn_n,explicit_abn_n,divergent_n,divergent_per_1000,rule_layer_rhythm_n,panel_pool_n
+"Overall (2023, non-empty texts)",21625,11066,7862,3204,148.2,2828,376
+Prior-wave MASLD exposed,6093,3036,2223,813,133.4,726,87
+Prior-wave non-exposed,9991,5083,3635,1448,144.9,1241,207
+No prior wave (first record),5541,2947,2004,943,170.2,861,82

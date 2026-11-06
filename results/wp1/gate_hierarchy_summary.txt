@@ -1,0 +1,5 @@
+﻿=== Gate hierarchy ===
+L1：10/12 PASS（qwen2.5-14b；below-gate = ecg_other κ=0.683 / ecg_unreadable κ=0.666）
+L2：below-gate 变量均不进入显式阳性主结局用途（other 本就排除；unreadable 走人工复核路径）
+L3：最终三类结局 explicit κ=0.997（2023/2024 年 κ=1.000）；naive κ=0.957（2024 退化至 0.837）
+Narrative: The initial acceptance rule evaluated component flags but did not directly validate the downstream outcome aggregation — this design gap later became the failure mode exposed by longitudinal monitoring

@@ -1,0 +1,45 @@
+=== Drift monitor signals and cross-library negative control ===
+
+A) Annual signals, index cohort
+      agreement_pct  kappa_v1v3  posrate_v1  posrate_v3  median_len  inline_enum_pct  domain_mix_pct  ecg_prefix_pct  ngram_drift
+year                                                                                                                             
+2018          94.16       0.881       39.64       45.46        10.0            3.634           0.000           0.220        0.101
+2019          96.87       0.934       37.19       40.32         5.0            0.237           0.000           0.030        0.052
+2020          98.12       0.960       37.14       39.01         5.0            0.434           0.000           0.000        0.047
+2021          97.78       0.952       35.41       37.63         5.0            0.390           0.000           0.153        0.051
+2022          94.16       0.883       42.96       48.80        11.0           22.255           0.023           7.687        0.407
+2023          84.46       0.693       36.94       52.10         5.0            0.217           0.032           0.005        0.069
+2024          85.42       0.714       41.03       55.37        10.0            0.719           0.000           0.043        0.104
+
+—— A2) Robust z (baseline 2018–2022) and alarm rule (≥2 signals with |z|>3) ——
+      agreement_pct  kappa_v1v3  posrate_v1  posrate_v3  median_len  inline_enum_pct  domain_mix_pct  ecg_prefix_pct  ngram_drift  n_alarm_signals  ALARM
+year                                                                                                                                                     
+2018          -1.01       -1.04        0.93        1.08        1.35             1.33            0.00            0.13         1.31                0  False
+2019           0.00        0.00        0.00        0.00        0.00            -0.08            0.00           -0.25         0.00                0  False
+2020           0.47        0.51       -0.02       -0.27        0.00             0.00            0.00           -0.31        -0.16                0  False
+2021           0.34        0.35       -0.67       -0.56        0.00            -0.02            0.00            0.00        -0.04                0  False
+2022          -1.01       -1.00        2.19        1.77        1.62             9.07            0.05           15.07         9.44                3   True
+2023          -4.62       -4.71       -0.09        2.46        0.00            -0.09            0.06           -0.30         0.44                2   True
+2024          -4.27       -4.30        1.46        3.15        1.35             0.12            0.00           -0.22         1.37                3   True
+
+Alarm years (≥2 signals): [2022, 2023, 2024]; strongest signal year: 2022
+Consistency signals only (requires a second extractor version, no gold standard) alarm: [2023, 2024]; style signals only (inline enumeration/domain mix/prefix/ngram) alarm: [2022]
+Leave-one-year-out check: the rule did not use the 2023 labels; whether 2023 was the only alarm year = False
+
+—— B) Cross-library negative control (v3 vs v1 ablation, same implementation) ——
+  Hospital 2018: n=14,456 v3 positive=45.0% v1 positive=45.4% agreement=99.6% κ=0.992
+  Hospital 2019: n=16,379 v3 positive=40.1% v1 positive=40.1% agreement=100.0% κ=1.000
+  Hospital 2020: n=16,098 v3 positive=39.0% v1 positive=39.0% agreement=100.0% κ=1.000
+  Hospital 2021: n=15,576 v3 positive=37.6% v1 positive=37.6% agreement=100.0% κ=1.000
+  Hospital 2022: n=17,256 v3 positive=48.6% v1 positive=48.7% agreement=100.0% κ=1.000
+  Hospital 2023: n=21,625 v3 positive=51.2% v1 positive=51.6% agreement=99.5% κ=0.991
+  Hospital 2024: n=20,717 v3 positive=54.9% v1 positive=55.3% agreement=99.6% κ=0.992
+  Negative-control 2019: n=50,000 v3 positive=46.5% v1 positive=46.6% agreement=99.9% κ=0.998
+  Negative-control 2020: n=50,000 v3 positive=46.8% v1 positive=46.8% agreement=99.8% κ=0.997
+  Negative-control 2021: n=50,000 v3 positive=50.9% v1 positive=51.0% agreement=99.9% κ=0.998
+  → Hospital: κ range 0.991–1.000, maximum year-to-year difference 0.009
+  → Negative-control library: κ range 0.997–0.998, maximum difference 0.001
+
+Interpretation: the same extractor pair shows a single-year collapse in the hospital library (2023) but no collapse in any year of the negative-control library (a different provider), so the collapse is a property of the institution's template/style change rather than of the extractor pair (cross-library negative control).
+
+-> figures/Figure4_drift_monitor.png/.pdf

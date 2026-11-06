@@ -1,0 +1,14 @@
+﻿metric,value,unit,source
+corpus_ecg_texts_nonempty_7y,122107,records,"hospital library, non-empty ECG text per year（14456+16379+16098+15576+17256+21625+20717）"
+alarm_years_of_7,3,years,drift monitor report (2022/2023/2024)
+no_alarm_years,4,years,2018–2021
+divergent_core_2023,3204,records,divergence core (confirmed at the previous freeze)
+divergence_rate_2023,14.82,%,"3204/21625 (2023 non-empty ECG texts) = 14.8%, consistent with the manuscript"
+review_candidates_per_10000_2023,1482,records/10000,divergence core / 2023 non-empty texts x 10000
+triggered_adjudication_n,160,records,prespecified five-stratum sampling (160-record adjudication data set)
+adjudication_labelings,320,labelings,160 x two annotators (A1/A2)
+arbitration_cases,1,cases,159/160 records concordant between the two clinicians; one disagreement (A075)
+continuous_gold_labelings_counterfactual,244214,labelings,122107 x 2 annotators
+labeling_burden_reduction,99.87,%,1 − 320/244214
+records_touched_fraction,0.131,%,160 / 122107
+external_crosslib_kappa_range,0.997-0.998,kappa,"cross_library_agreement.csv (external site 2019-2021, 50,000 per year); the agreement signal does not trigger in the control provider"

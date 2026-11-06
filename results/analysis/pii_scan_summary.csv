@@ -1,0 +1,13 @@
+source,file,rows,mobile,idcard18,idcard15,landline,email,address,hometown,name_title,name_field,longnum
+source,ecg_reference_full.csv,570,0,0,0,0,0,0,0,0,0,0
+source,echo_reference_full.csv,600,0,0,0,0,0,0,0,0,0,0
+source,abdomen_primary_reference_full.csv,600,0,0,0,0,0,0,0,0,0,0
+source,abdomen_hospital_reference_full.csv,600,0,0,0,0,0,0,0,0,0,0
+release,ECG_to_annotate.csv,570,0,0,0,0,0,0,0,0,0,0
+release,ECHOCARDIOGRAPHY_to_annotate.csv,300,0,0,0,0,0,0,0,0,0,0
+release,ABDOMINAL_ULTRASOUND_PRIMARY_to_annotate.csv,300,0,0,0,0,0,0,0,0,0,0
+release,ABDOMINAL_ULTRASOUND_HOSPITAL_to_annotate.csv,300,0,0,0,0,0,0,0,0,0,0
+full_internal,checkup_long.csv (ecg_text),122575,0,0,0,0,0,0,0,0,0,0
+full_internal_analysis,analysis_frame.csv (ecg_text),122575,0,0,0,0,0,0,0,0,0,0
+full_internal_ultrasound,"ultrasound_text_long.csv (us_text,main_text)",121011,3,0,0,0,0,0,0,0,0,4
+full_external,"external_arm_long.csv (ecg_text,fatty_text,plaque_text)",129953,0,0,0,0,0,0,0,0,0,0

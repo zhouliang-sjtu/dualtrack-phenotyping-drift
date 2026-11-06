@@ -1,0 +1,43 @@
+{
+ "database_version": "3.6",
+ "freeze_date": "2026-09-20",
+ "status": "FROZEN - sole authoritative analysis database; the source database is not redistributed",
+ "fingerprints": {
+  "checkup_long.csv": {
+   "sha256": "1345178081bc945fddbcf747ff5a8d3bba91f85f14e32016e69a215469ee0ed7",
+   "bytes": 47964538
+  },
+  "analysis_frame.csv": {
+   "sha256": "aa099120424fa521ea47e810cba2b5b941d5624f4367cf9319b3430ce1e49ba7",
+   "bytes": 75513409
+  },
+  "checkup_long_previous_freeze.csv": {
+   "sha256": "d0949ee9fd6a7c2b44163102432467a682d6da3d09ce657f66aa844c3833441c",
+   "bytes": 47966558
+  },
+  "analysis_frame_previous_freeze.csv": {
+   "sha256": "3ca9ca8c67176b48e4ad0ab4490296e5a3b530d9fb3dee203410dd8e6bf002c8",
+   "bytes": 75031419
+  },
+  "checkup_long_earlier_freeze.csv": {
+   "sha256": "4da9c7c3bff85b6e4e8ea6c4c9f977ea3a2369f680c33d63039f0b1d1b041369",
+   "bytes": 47966833
+  },
+  "analysis_frame_earlier_freeze.csv": {
+   "sha256": "6814f00888b83275fff819919053dca6c8d98ac86542f73a67f70188f5851dd9",
+   "bytes": 74788593
+  },
+  "checkup_long_frozen_20260920.csv": {
+   "sha256": "1345178081bc945fddbcf747ff5a8d3bba91f85f14e32016e69a215469ee0ed7",
+   "bytes": 47964538
+  },
+  "wave_level.csv.gz": {
+   "sha256": "8fd18591eee384d4f4a78f96ef79ac4e15d7f556c85d8bcc84fcb33a15c4eba0",
+   "bytes": 16693929
+  },
+  "analysis_frame_frozen_20260920.csv": {
+   "sha256": "aa099120424fa521ea47e810cba2b5b941d5624f4367cf9319b3430ce1e49ba7",
+   "bytes": 75513409
+  }
+ }
+}

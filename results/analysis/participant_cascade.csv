@@ -1,0 +1,6 @@
+Step,Records,Excluded,Criterion
+1,122575,0,"All examination records with linked ECG and laboratory data, 2018-2024"
+2,122107,468,No ECG narrative in the record
+3,89986,32121,"No preceding record, or a gap of more than 2 years"
+4,50708,39278,Prior-wave ECG abnormal or unreadable (record not at risk)
+5,46973,3735,At least one lagged covariate missing

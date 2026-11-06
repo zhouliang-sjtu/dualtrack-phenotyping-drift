@@ -1,0 +1,62 @@
+﻿round,domain,type,variable,sample_id,A1_value,A2_value,ruling,reason,codebook_revision,notes
+Round 1 (2026-09-03),ECG,disagreement,ecg_other,ECG_0054,1,0,0,早期复极（含J点抬高）属正常变异，未列入手册ecg_other器质异常范畴，判0；建议手册明确该表述不计入,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_other,ECG_0175,1,0,0,“左心室电压高”为电压标准而非肥大/肥厚诊断，不属ecg_other列示情形，判0；建议手册明确高电压口径,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_other,ECG_0341,1,0,1,二度Ⅱ型窦房阻滞属窦房传导障碍，avblock/bbb各列均不覆盖，按残余类别归入ecg_other；建议手册增补窦房阻滞,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_other,ECG_0374,1,0,1,非阵发性房室连接处（交界区）心动过速属节律/器质异常，其余各列不覆盖，归入ecg_other；建议手册增补连接处心律,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_other,ECG_0391,1,0,1,非阵发性房室连接处（交界区）心动过速属节律/器质异常，其余各列不覆盖，归入ecg_other；建议手册增补连接处心律,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_other,ECG_0453,1,0,0,“左心室电压高”为电压标准而非肥大/肥厚诊断，不属ecg_other列示情形，判0；建议手册明确高电压口径,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_other,ECG_0514,1,0,0,早期复极（含J点抬高）属正常变异，未列入手册ecg_other器质异常范畴，判0；建议手册明确该表述不计入,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_other,ECG_0529,1,0,0,“左心室电压高”为电压标准而非肥大/肥厚诊断，不属ecg_other列示情形，判0；建议手册明确高电压口径,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_other,ECG_0531,1,0,0,早期复极（含J点抬高）属正常变异，未列入手册ecg_other器质异常范畴，判0；建议手册明确该表述不计入,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_other,ECG_0538,1,0,0,早期复极（含J点抬高）属正常变异，未列入手册ecg_other器质异常范畴，判0；建议手册明确该表述不计入,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_rate,ECG_0221,0,1,1,房颤伴快速心室率（快速型）即心室率>100次/分，心率异常成立，判1；建议手册明确房颤/房扑伴快速心室率计入ecg_rate,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_rate,ECG_0374,0,1,0,非阵发性交界区心动过速心室率多在70–130次/分，且手册ecg_rate仅限窦速/窦缓，判0；建议手册明确非窦性心动过速口径,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_rate,ECG_0391,0,1,0,非阵发性交界区心动过速心室率多在70–130次/分，且手册ecg_rate仅限窦速/窦缓，判0；建议手册明确非窦性心动过速口径,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_rate,ECG_0442,0,1,1,房颤伴快速心室率（快速型）即心室率>100次/分，心率异常成立，判1；建议手册明确房颤/房扑伴快速心室率计入ecg_rate,是,
+Round 1 (2026-09-03),ECG,disagreement,ecg_rate,ECG_0508,0,1,1,房颤伴快速心室率（快速型）即心室率>100次/分，心率异常成立，判1；建议手册明确房颤/房扑伴快速心室率计入ecg_rate,是,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_la_dilate,ECHO_0248,1,0,1,手册阈值为左房内径≥40mm，原文实测40mm（含前后径）即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_la_dilate,ECHO_0257,1,0,1,手册阈值为左房内径≥40mm，原文实测40mm（含前后径）即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_la_dilate,ECHO_0186,1,0,1,手册阈值为左房内径≥40mm，原文实测40mm（含前后径）即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_la_dilate,ECHO_0133,1,0,1,手册阈值为左房内径≥40mm，原文实测40mm（含前后径）即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_la_dilate,ECHO_0080,1,0,1,手册阈值为左房内径≥40mm，原文实测40mm（含前后径）即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_la_dilate,ECHO_0056,1,0,1,手册阈值为左房内径≥40mm，原文实测40mm（含前后径）即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_la_dilate,ECHO_0282,1,0,1,手册阈值为左房内径≥40mm，原文实测40mm（含前后径）即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_la_dilate,ECHO_0121,1,0,1,手册阈值为左房内径≥40mm，原文实测40mm（含前后径）即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_la_dilate,ECHO_0526,1,0,1,手册阈值为左房内径≥40mm，原文实测40mm（含前后径）即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_lvh,ECHO_0279,1,0,1,手册阈值为室间隔或左室后壁厚度≥12mm，原文实测12mm即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_lvh,ECHO_0212,1,0,1,手册阈值为室间隔或左室后壁厚度≥12mm，原文实测12mm即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_lvh,ECHO_0178,1,0,1,手册阈值为室间隔或左室后壁厚度≥12mm，原文实测12mm即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_lvh,ECHO_0260,1,0,1,手册阈值为室间隔或左室后壁厚度≥12mm，原文实测12mm即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_lvh,ECHO_0069,1,0,1,手册阈值为室间隔或左室后壁厚度≥12mm，原文实测12mm即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,disagreement,echo_lvh,ECHO_0460,1,0,1,手册阈值为室间隔或左室后壁厚度≥12mm，原文实测12mm即达阈值，判阳性,否,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,flag recheck,,ECHO_0248,,,维持,心包腔液性暗区按心包积液论、属结构异常（echo_normal=0），维持A1/A2处理；建议手册增设心包积液条款,是,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,flag recheck,,ECHO_0047,,,维持,心包腔液性暗区按心包积液论、属结构异常（echo_normal=0），维持A1/A2处理；建议手册增设心包积液条款,是,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,flag recheck,,ECHO_0279,,,维持,左房后壁稍高回声性质待定（血栓/赘生物待排），按心腔内结构异常处理并建议临床随访复查；建议手册增设心腔内异常回声条款,是,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,flag recheck,,ECHO_0260,,,维持,心包腔液性暗区按心包积液论、属结构异常（echo_normal=0），维持A1/A2处理；建议手册增设心包积液条款,是,
+Round 1 (2026-09-03),ECHOCARDIOGRAPHY,flag recheck,,ECHO_0275,,,维持,心包积液按结构异常处理；另室间隔/心尖弥漫性增厚17.1mm，echo_lvh=1无争议；建议手册增设心包积液条款,是,
+Round 1 (2026-09-03),ABDOMINAL_ULTRASOUND_PRIMARY,flag recheck,,ABD_PRIMARY_0438,,,维持,肝内未定性结节≥20mm按占位性病变计入us_hepatic_other（声像特征倾向血管瘤，建议进一步检查定性）；建议手册明确未定性结节归类,是,
+Round 1 (2026-09-03),ABDOMINAL_ULTRASOUND_PRIMARY,flag recheck,,ABD_PRIMARY_0527,,,维持,肝内未定性结节≥20mm按占位性病变计入us_hepatic_other（声像特征倾向血管瘤，建议进一步检查定性）；建议手册明确未定性结节归类,是,
+Round 1 (2026-09-03),ABDOMINAL_ULTRASOUND_PRIMARY,flag recheck,,ABD_PRIMARY_0539,,,维持,肝内稍高回声结节24×19mm按占位计入us_hepatic_other（另肝囊肿45mm同列）；建议手册明确未定性结节归类,是,
+Round 1 (2026-09-03),ABDOMINAL_ULTRASOUND_PRIMARY,flag recheck,,ABD_PRIMARY_0421,,,维持,肝内未定性结节≥20mm按占位性病变计入us_hepatic_other（声像特征倾向血管瘤，建议进一步检查定性）；建议手册明确未定性结节归类,是,
+Round 1 (2026-09-03),ABDOMINAL_ULTRASOUND_PRIMARY,flag recheck,,ABD_PRIMARY_0230,,,维持,肝内稍低回声结节23×15mm按占位计入us_hepatic_other；胆囊息肉3mm计入us_gallstone并记note；建议手册明确未定性结节归类,是,
+Round 1 (2026-09-03),ABDOMINAL_ULTRASOUND_PRIMARY,flag recheck,,ABD_PRIMARY_0008,,,维持,“串珠样”强回声伴声影倾向肝内钙化灶/胆管结石，属肝内异常病灶，计入us_hepatic_other；胆囊息肉5mm照记；建议手册增设钙化灶条款,是,
+Round 1 (2026-09-03),ABDOMINAL_ULTRASOUND_HOSPITAL,disagreement,main_discrepant,ABD_HOSPITAL_0208,0,1,1,超声所见三要素不足2条（管道清晰、无衰减）不支持脂肪肝，结论/主检却判脂肪肝；以所见优先，矛盾成立判1,否,
+Round 1 (2026-09-03),ABDOMINAL_ULTRASOUND_HOSPITAL,disagreement,main_discrepant,ABD_HOSPITAL_0598,0,1,1,主检（CT附见）报脂肪肝而腹部超声未见，按U6判1；建议手册明确脂肪肝源自其他影像时的判定口径,是,2023移位行按生产冻结文本重标后A1/A2一致判0（main_discrepant=0），本裁定不再适用，终版仲裁值已清除
+Round 1 (2026-09-03),ABDOMINAL_ULTRASOUND_HOSPITAL,flag recheck,,ABD_HOSPITAL_0086,,,维持,肝实质回声不均匀（网格样）单独出现，按U3不判脂肪肝；血吸虫性肝病计入us_hepatic_other；规则已覆盖，无需修订,否,
+Round 1 (2026-09-03),ABDOMINAL_ULTRASOUND_HOSPITAL,flag recheck,,ABD_HOSPITAL_0084,,,维持,肝实质回声不均匀（网格样）单独出现，按U3不判脂肪肝；血吸虫性肝病计入us_hepatic_other；规则已覆盖，无需修订,否,
+Round 1 (2026-09-03),ABDOMINAL_ULTRASOUND_HOSPITAL,flag recheck,,ABD_HOSPITAL_0105,,,维持,回声不均匀单独出现按U3不判脂肪肝；另胆囊息肉4mm、左肾囊肿23mm按U5照记；规则已覆盖,否,
+Round 1 (2026-09-03),ABDOMINAL_ULTRASOUND_HOSPITAL,flag recheck,,ABD_HOSPITAL_0186,,,维持,回声不均匀单独出现按U3不判脂肪肝；右肾上腺区低回声性质待定、建议进一步检查，记note即可；规则已覆盖,否,
+"Round 2 (2026-09-18)",ABDOMINAL_ULTRASOUND_HOSPITAL,disagreement,us_hepatic_other,ABD_HOSPITAL_0291,0,1,0,"采纳A1：手册标准为肝囊肿(>10mm)，10×10mm最大径=10mm未达阈值，裁定us_hepatic_other=0；建议手册明确为""最大径>10mm""",是,member of the supplementary annotation set；终版仲裁值=0
+"Round 2 (2026-09-18)",ABDOMINAL_ULTRASOUND_HOSPITAL,flag recheck,,ABD_HOSPITAL_0255,,,改判,"裁定us_hepatic_other=0：手册枚举（血吸虫性肝病、肝囊肿>10mm、血管瘤、占位、肝硬化）未含""慢性肝病""，按v1.0从严不判；A1/A2标注保留，建议手册v1.1增补慢性肝病/肝实质增粗类归属",是,member of the supplementary annotation set；A1/A2原判1，仲裁改判0，终版仲裁值=0
+Pre-round verification,ECG,pre-round verification,,ECG_0318,,,1,,,存量保留
+Pre-round verification,ECG,pre-round verification,,ECG_0320,,,1,,,23 records re-annotated after supplementary review; original arbitration value cleared
+Pre-round verification,ECG,pre-round verification,,ECG_0329,,,1,,,存量保留
+Pre-round verification,ECG,pre-round verification,,ECG_0332,,,1,,,23 records re-annotated after supplementary review; original arbitration value cleared
+Pre-round verification,ECG,pre-round verification,,ECG_0366,,,1,,,存量保留
+Pre-round verification,ECG,pre-round verification,,ECG_0382,,,1,,,存量保留
+Pre-round verification,ECG,pre-round verification,,ECG_0389,,,1,,,存量保留
+Pre-round verification,ECG,pre-round verification,,ECG_0396,,,1,,,存量保留
+Pre-round verification,ECG,pre-round verification,,ECG_0400,,,1,,,存量保留
+Pre-round verification,ECG,pre-round verification,,ECG_0418,,,1,,,存量保留
+Pre-round verification,ECG,pre-round verification,,ECG_0419,,,1,,,存量保留
+Pre-round verification,ECHOCARDIOGRAPHY,pre-round verification,,ECHO_0232,,,1,,,存量保留（extractor_manifest：la_dilate 40mm阈值实证例）

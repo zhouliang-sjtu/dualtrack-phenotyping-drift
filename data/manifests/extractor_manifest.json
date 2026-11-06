@@ -1,0 +1,76 @@
+{
+ "protocol": "Text-extraction measurement protocol v1.1 (dual-annotated reference standard: 1,470 reports across three narrative domains)",
+ "reference_standard_file": "data/gold-standard/gold_standard_labels.csv",
+ "extractors": [
+  {
+   "variable_domain": "ECG",
+   "extractor_type": "dictionary_v1 (production) | dictionary_v3 (negation-window) | llm",
+   "model_name": "qwen2.5:14b / 7b, glm4:9b (Ollama, local)",
+   "model_version": "qwen2.5 14b/7b instruct; glm-4-9b-chat (Ollama default quantization, tag logged per batch)",
+   "prompt_version": "v1",
+   "prompt_hash_sha256_16": "dbb1ebe717ad3497",
+   "temperature": 0.0,
+   "seed": 42,
+   "status": "frozen",
+   "frozen_date": "2026-09-09",
+   "accepted_model": "qwen2.5:14b (Ollama, local)",
+   "note": "ECG 12-variable multi-label prompt v1 (mirrors codebook v2.0 conventions: early repolarisation / high voltage / AF with rapid ventricular rate / sinoatrial block / domain-mismatch rules); 570-report validation batch run 2026-09-09",
+   "prompt_file": "docs/prompts/llm_ecg_prompt_v1.md",
+   "reference_standard": "data/gold-standard/gold_standard_labels.csv (domain=ECG)",
+   "acceptance": {
+    "file": "results/analysis/model_acceptance_ecg.csv",
+    "below_gate": {
+     "ecg_other": "kappa=0.685, acc=0.963; 15 false negatives are all isolated left-ventricular-high-voltage statements (annotator consensus other=1 conflicts with the arbitrated convention ECG_0175/codebook v2.0 — gold-standard convention inconsistency, the model follows the arbitrated convention; see data/adjudication/arbitration_decisions.csv (ECG_0175) and Appendix S12); 6 false positives are findings not enumerated in the manual other-list (aberrant conduction x3, QT prolongation, short PR, one domain-contaminated text)"
+    },
+    "summary": "qwen2.5:14b 11/12 PASS (kappa 0.92-1.00), 7b 7/12, glm4 7/12; any-abnormal per-year kappa: 14b 0.966-1.000 in every year (including the 2022-23 template transition), dict v1 collapses to 0.41 in the same years, dict v3 1.000 (rules share the annotation manual)"
+   }
+  },
+  {
+   "variable_domain": "ECHOCARDIOGRAPHY",
+   "extractor_type": "regex (EF, deterministic) + llm (classification)",
+   "model_name": "qwen2.5:14b (Ollama, local)",
+   "model_version": "qwen2.5 14b instruct",
+   "prompt_version": "v2.1",
+   "prompt_hash_sha256_16": "adf66aecbb80e25b",
+   "temperature": 0.0,
+   "seed": 42,
+   "status": "frozen",
+   "frozen_date": "2026-09-09",
+   "accepted_model": "qwen2.5:14b (Ollama, local)",
+   "prompt_v2_1_changes": [
+    "synchronised with annotation manual v2.0: LVH >= 12 mm and left-atrial diameter >= 40 mm both threshold-inclusive",
+    "added: pericardial effusion / intracardiac echogenicity of uncertain nature counts as structural abnormality -> label=abnormal",
+    "added: unreadable definition includes domain mismatch (non-cardiac-ultrasound content)",
+    "added: left-atrial transverse diameters are descriptive only and excluded from the 40-mm threshold (basis: gold-standard frozen convention, case ECHO_0232)",
+    "added: explicit label aggregation rule (any abnormal field=1 -> abnormal)",
+    "reflux_grade: most severe grade when multiple valves involved (explicit)"
+   ],
+   "prompt_file": "docs/prompts/llm_echo_prompt_v2_1.md",
+   "reference_standard": "data/gold-standard/gold_standard_labels.csv (domain=ECHOCARDIOGRAPHY)",
+   "acceptance": {
+    "file": "results/analysis/model_acceptance_echocardiography.csv",
+    "score_mode": "derived scoring: echo_normal / echo_variant deterministically derived from frozen structured fields plus the label field",
+    "variable_notes": {
+     "echo_la_dilate": "below-gate restricted use: kappa=0.877/acc=0.973 pass, F1_pos=0.892 below the 0.90 gate (8 false positives: 4 sub-threshold misjudgements, 2 non-enumerated phrasings, 1 without quadrant diameter, 1 LV/LA confusion); 95% CI overlaps 0.90",
+     "echo_variant": "below-gate restricted use: kappa=0.833 but acc=0.936/F1=0.876 below gate; errors largely inherited from reflux grading and 7 gold-variant rows with reflux != trace_mild convention noise"
+    }
+   }
+  },
+  {
+   "variable_domain": "ABDOMINAL_ULTRASOUND_PRIMARY",
+   "extractor_type": "dictionary (description-based criteria)",
+   "status": "frozen",
+   "frozen_date": "2026-09-10",
+   "accepted_model": "dictionary v1 (production rules, verbatim)",
+   "reference_standard": "data/gold-standard/gold_standard_labels.csv (domain=ABDOMINAL_ULTRASOUND_PRIMARY)"
+  },
+  {
+   "variable_domain": "ABDOMINAL_ULTRASOUND_HOSPITAL",
+   "extractor_type": "dictionary (description-based criteria)",
+   "status": "frozen",
+   "frozen_date": "2026-09-10",
+   "accepted_model": "dictionary v1 (production rules, verbatim)",
+   "reference_standard": "data/gold-standard/gold_standard_labels.csv (domain=ABDOMINAL_ULTRASOUND_HOSPITAL)"
+  }
+ ]
+}

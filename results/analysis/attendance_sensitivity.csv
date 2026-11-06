@@ -1,0 +1,5 @@
+Subset,Person-years,Events,HR (95% CI),p
+All records in the risk set,46973,14656,0.9640 (0.9236–1.0061),0.0929
+Five or more waves attended,39473,12169,0.9588 (0.9140–1.0057),0.0840
+Six or more waves attended,34923,10831,0.9593 (0.9116–1.0096),0.1110
+All seven waves attended,26437,8238,0.9606 (0.9054–1.0191),0.1827

@@ -1,0 +1,23 @@
+﻿域,序号,检查项,合格标准,结果,证据
+ECG,1,行数一致,各域 30 份，未增删行,PASS,returned 30 rows / released to annotators 30 rows
+ECG,2,列结构一致,34 列，列名与annotation package逐字同序,PASS,34 列，逐列同名同序
+ECG,3,编号原样,SRECG-001…030，未改、未恢复旧编号,PASS,顺序与内容完全一致
+ECG,4,原文未被改动,text 与annotation package逐行一致，且与首轮原编号文本一致,PASS,annotation package 0 例、首轮 0 例不一致（逐字符）
+ECG,5,flag 取值合法,"二值 flag ∈{0,1} 不留空；degree ∈{轻,中,重}且与 fatty 配套",PASS,"二值 12 项 × 30 行 × A1/A2 全部 ∈{0,1} 非空；degree 配套正常"
+ECG,6,outcome 取值合法,"A?_outcome ∈{0,1,2}，全部非空",PASS,"A1/A2 × 30 行全部非空且 ∈{0,1,2}"
+ECG,7,必填配套,"outcome=2→basis 非空非""无""；∈{1,0}→basis=""无""；=0→reason∈{1,2,3,4}",PASS,三向配套全部符合
+ECG,8,盲法独立,编号重排有效、未泄露旧编号、note 无逐字复制首轮,PASS,旧编号泄露 0 例；重标 note 4 条，其中与首轮逐字相同 0 条（程序可核部分；主观盲法以标注员声明为准）
+ECG,9,时序核验,Re-annotation completed ≥3 days after first-round return (2026-10-19),PASS,间隔 5 天（2026-10-19 → 2026-10-24）
+ECG,10,arbitration 列,整列为空（标注员勿填）,PASS,annotation package本身无 arbitration 列（整列不存在，不存在被填风险）
+ABD,1,行数一致,各域 30 份，未增删行,PASS,returned 30 rows / released to annotators 30 rows
+ABD,2,列结构一致,22 列，列名与annotation package逐字同序,PASS,22 列，逐列同名同序
+ABD,3,编号原样,SRABD-001…030，未改、未恢复旧编号,PASS,顺序与内容完全一致
+ABD,4,原文未被改动,text 与annotation package逐行一致，且与首轮原编号文本一致,PASS,annotation package 0 例、首轮 0 例不一致（逐字符）
+ABD,5,flag 取值合法,"二值 flag ∈{0,1} 不留空；degree ∈{轻,中,重}且与 fatty 配套",PASS,"二值 5 项 × 30 行 × A1/A2 全部 ∈{0,1} 非空；degree 配套正常"
+ABD,6,outcome 取值合法,"A?_outcome ∈{0,1,2}，全部非空",PASS,"A1/A2 × 30 行全部非空且 ∈{0,1,2}"
+ABD,7,必填配套,"outcome=2→basis 非空非""无""；∈{1,0}→basis=""无""；=0→reason∈{1,2,3,4}",PASS,三向配套全部符合
+ABD,8,盲法独立,编号重排有效、未泄露旧编号、note 无逐字复制首轮,PASS,旧编号泄露 0 例；重标 note 26 条，其中与首轮逐字相同 0 条（程序可核部分；主观盲法以标注员声明为准）
+ABD,9,时序核验,Re-annotation completed ≥3 days after first-round return (2026-10-19),PASS,间隔 5 天（2026-10-19 → 2026-10-24）
+ABD,10,arbitration 列,整列为空（标注员勿填）,PASS,annotation package本身无 arbitration 列（整列不存在，不存在被填风险）
+ECG,11,组内一致性（κ 门）,outcome intra-rater κ ≥0.85（A1、A2 分别）,PASS,A1: κ=1.000（raw=1.000，n=30）；A2: κ=1.000（raw=1.000，n=30）
+ABD,11,组内一致性（κ 门）,outcome intra-rater κ ≥0.85（A1、A2 分别）,PASS,A1: κ=1.000（raw=1.000，n=30）；A2: κ=0.939（raw=0.967，n=30）

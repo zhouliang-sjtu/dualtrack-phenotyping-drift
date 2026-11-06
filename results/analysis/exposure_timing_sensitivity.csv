@@ -1,0 +1,4 @@
+spec,HR,lo,hi,p,n_risk,n_events,exposure_note
+primary,0.964,0.9236,1.0061,0.0929,46973,14656,exposure = prior-wave MASLD (lag 1); identical to the locked primary estimand (anchor)
+lag2,0.9242,0.8784,0.9724,0.0024,25016,9081,exposure = MASLD two records earlier (complete-case on the t-2 record; gap to t-2 <= 4 years); covariates and risk set unchanged Median gap to the t-2 record: 2 years.
+incident,0.9369,0.8908,0.9854,0.0113,34607,10094,"risk set restricted to records with no MASLD at or before t-2, so every exposed record is newly diagnosed MASLD in the preceding wave; prevalent exposure exits the risk set (not recoded)"

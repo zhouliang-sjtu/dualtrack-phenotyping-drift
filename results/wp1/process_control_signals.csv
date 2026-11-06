@@ -1,0 +1,4 @@
+site,year,n,median_len,inline_enum_pct,domain_mix_pct,ecg_prefix_pct,note
+PRIMARY,2019,50000,5.0,0.36,0.008,0.332,Style signals are site-local (prespecified protocol §6: the negative-control library uses its local baseline); hospital-library baseline is in drift_monitor_signals.csv
+PRIMARY,2020,50000,5.0,0.94,0.002,1.046,Style signals are site-local (prespecified protocol §6: the negative-control library uses its local baseline); hospital-library baseline is in drift_monitor_signals.csv
+PRIMARY,2021,50000,5.0,1.018,0.02,0.8,Style signals are site-local (prespecified protocol §6: the negative-control library uses its local baseline); hospital-library baseline is in drift_monitor_signals.csv

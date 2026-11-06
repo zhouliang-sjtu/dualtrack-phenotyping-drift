@@ -1,0 +1,5 @@
+domain,track,n_records,n_unique_texts,redundancy,kappa,ci_low,ci_high,ci_record_low,ci_record_high,se_cluster,se_record,design_effect,kappa_unique_text,n_unique_eval
+ECG,dict,300,95,3.158,0.8036,0.5343,0.9078,0.7354,0.8655,0.0953,0.0332,2.871,0.5904,95
+ECG,llm,299,94,3.181,0.9402,0.8113,0.982,0.8985,0.9741,0.0435,0.0193,2.258,0.795,94
+ABD,dict,300,143,2.098,0.7867,0.6521,0.8728,0.7234,0.8533,0.0563,0.0331,1.699,0.6044,143
+ABD,llm,300,143,2.098,0.9162,0.8312,0.9584,0.8702,0.9549,0.0324,0.0216,1.502,0.8103,143

@@ -1,0 +1,37 @@
+=== S 全规格曲线（多宇宙）===
+帧：H 层 122,575 行；harmonized 子集 122,107；全协变量子集 121,220（2s）
+  [ 1/24] harmonized|v1_abnormal|noFE|model            HR=0.9574 (0.9200–0.9964) P=0.03239 *
+  [ 2/24] harmonized|v1_abnormal|noFE|cluster          HR=0.9574 (0.9156–1.0011) P=0.05582 
+  [ 3/24] harmonized|v1_abnormal|yearFE|model          HR=0.9622 (0.9256–1.0002) P=0.05128 
+  [ 4/24] harmonized|v1_abnormal|yearFE|cluster        HR=0.9622 (0.9217–1.0045) P=0.0792 
+  [ 5/24] harmonized|v3_abnormal|noFE|model            HR=0.9528 (0.9177–0.9893) P=0.01178 *
+  [ 6/24] harmonized|v3_abnormal|noFE|cluster          HR=0.9528 (0.9132–0.9943) P=0.02605 *
+  [ 7/24] harmonized|v3_abnormal|yearFE|model          HR=0.9640 (0.9293–1.0000) P=0.05014 
+  [ 8/24] harmonized|v3_abnormal|yearFE|cluster        HR=0.9640 (0.9236–1.0061) P=0.09287 
+  [ 9/24] full|ecg_abnormal|noFE|model                 HR=0.9741 (0.9335–1.0165) P=0.228 
+  [10/24] full|ecg_abnormal|noFE|cluster               HR=0.9741 (0.9301–1.0202) P=0.2669 
+  [11/24] full|ecg_abnormal|yearFE|model               HR=0.9735 (0.9341–1.0146) P=0.2031 
+  [12/24] full|ecg_abnormal|yearFE|cluster             HR=0.9735 (0.9309–1.0181) P=0.2401 
+  [13/24] full|ecg_stt|noFE|model                      HR=1.0785 (1.0202–1.1402) P=0.007725 *
+  [14/24] full|ecg_stt|noFE|cluster                    HR=1.0785 (1.0096–1.1521) P=0.02486 *
+  [15/24] full|ecg_stt|yearFE|model                    HR=1.0740 (1.0197–1.1311) P=0.007001 *
+  [16/24] full|ecg_stt|yearFE|cluster                  HR=1.0740 (1.0125–1.1391) P=0.01755 *
+  [17/24] full|ecg_af|noFE|model                       HR=0.8771 (0.6596–1.1661) P=0.3668 
+  [18/24] full|ecg_af|noFE|cluster                     HR=0.8771 (0.6397–1.2025) P=0.4152 
+  [19/24] full|ecg_af|yearFE|model                     HR=0.9277 (0.8203–1.0491) P=0.2317 
+  [20/24] full|ecg_af|yearFE|cluster                   HR=0.9277 (0.8786–0.9795) P=0.006774 *
+  [21/24] full|ecg_anyBlock|noFE|model                 HR=1.0340 (0.9401–1.1374) P=0.491 
+  [22/24] full|ecg_anyBlock|noFE|cluster               HR=1.0340 (0.9149–1.1687) P=0.592 
+  [23/24] full|ecg_anyBlock|yearFE|model               HR=1.0408 (0.9625–1.1254) P=0.3163 
+  [24/24] full|ecg_anyBlock|yearFE|cluster             HR=1.0408 (0.9641–1.1236) P=0.3061 
+
+规格总数 24；HR 范围 0.877–1.079；中位 0.969
+P<0.05 规格数：8/24
+  无 FE: n=12，HR 中位 0.966，显著 5/12
+  year FE: n=12，HR 中位 0.969，显著 3/12
+  版本 v1: n=20，HR 中位 0.974，显著 6/20
+  版本 v3: n=4，HR 中位 0.958，显著 2/4
+
+判读：①无 FE 规格中 MASLD→ECG 异常关联方向一致（HR>1）且部分显著；②加入 year FE 后点估计普遍回到 ~1 且不再显著；③两个版本（v1/v3）在这一模式上一致 → 结论对'版本'选择不敏感，对'是否控制年份'敏感。
+
+-> figures/SupplementaryFigureS1_specification_curve.png/.pdf

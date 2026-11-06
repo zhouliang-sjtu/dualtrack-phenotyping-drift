@@ -1,0 +1,9 @@
+=== Operational burden ===
+External-site style signals (50,000 per year, seed=42):
+  2019: n=50
+  2020: n=50
+  2021: n=50
+""
+Key statement (manuscript wording, not overstated):
+Monitoring reduced continuous gold-standard labeling of the seven-year corpus (244
+DONE

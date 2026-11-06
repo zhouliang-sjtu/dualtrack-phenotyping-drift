@@ -1,0 +1,7 @@
+﻿=== Exposure timing and new-onset sensitivity (lag-2; new-onset MASLD only) ===
+Frame loaded: 122,575 rows, 30,677 persons (2 s)
+v1/v3 outcome columns: loaded from cache (outcome_columns_cache.csv.gz)
+  primary   HR=0.9640 (0.9236–1.0061)  p=0.0929  n=46,973 ev=14,656
+  primary anchor matches to the digit (0.964/0.9236/1.0061/46,973/14,656) => machine-verified
+  lag2      HR=0.9242 (0.8784–0.9724)  p=0.0024  n=25,016 ev=9,081  gap_med=2.0
+  incident  HR=0.9369 (0.8908–0.9854)  p=0.0113  n=34,607 ev=10,094

@@ -1,0 +1,14 @@
+﻿=== Primary analysis lock (production-freeze audit) ===
+PRIMARY = adjudicated (V3.0 explicit) + year FE 叙事；All estimates passed the 2026-09-20 production-freeze audit.
+Naive analyses and the 24-specification grid are secondary; ST-T is the falsification control.
+Manuscript rule: the abstract reports PRIMARY and the falsification control only; P values are given in text without 0.05 colouring.
+""
+                 role                                          spec                                    claim  claimed  actual_freeze audit                                        note
+              PRIMARY adjudicated (V3.0 explicit) production
+           PRIMARY-FE                  v3 + year FE (S-HARM spec)                   v3+FE HR 0.964 p=0.096   0.9640      0.9640  PASS              0.964 (0.9236–1.0061)，n=46
+            SECONDARY                    naive production + year FE                naive+FE HR 0.961 p=0.054   0.9610      0.9610  PASS                               0.961 p=0.054
+            SECONDARY                       naive production
+            SECONDARY                  spec-curve median (24 specs)    spec-curve median HR 0.969 (24 specs)   0.9690      0.9690  PASS                                       0.969
+            SECONDARY                          version ΔHR (yearFE)             version ΔHR +0.0018 (yearFE)   0.0018      0.0018  PASS                  +0.0018; TOST ±5% passed at the production freeze
+FALSIFICATION-CONTROL                                  ST-T fullcov           ST-T fullcov HR 1.078 p=0.0077   1.0780      1.0780  PASS 1.078 p=0.0077（template-insensitive 内部阳性对照）
+FALSIFICATION-CONTROL                                      ST-T +FE               ST-T +FE HR 1.074 p=0.0067   1.0740      1.0740  PASS                              1.074 p=0.0067

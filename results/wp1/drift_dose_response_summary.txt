@@ -1,0 +1,16 @@
+﻿=== Drift dose-response (2023 material x 2021 baseline) ===
+Baseline 2021: 15
+inline_enum_pct（含 '、' 的文本比例）: 2021 基线 0.392% | 2023 漂移池 0.217% | 2018–2022 median 0.434% / MAD 0.197%（robust scale 0.291 pp）
+Drift pool 21
+dose= 0%  naive=37.56%  分歧/1000=30.6  κ(v1×v3)=0.952  alarm signals=0 → no
+dose= 5%  naive=38.35%  分歧/1000=36.9  κ(v1×v3)=0.938  alarm signals=0 → no
+dose=10%  naive=39.12%  分歧/1000=42.6  κ(v1×v3)=0.925  alarm signals=0 → no
+dose=20%  naive=40.50%  分歧/1000=53.6  κ(v1×v3)=0.897  alarm signals=0 → no
+dose=30%  naive=41.86%  分歧/1000=66.8  κ(v1×v3)=0.869  alarm signals=0 → no
+dose=40%  naive=42.98%  分歧/1000=78.8  κ(v1×v3)=0.840  alarm signals=0 → no
+dose=50%  naive=44.66%  分歧/1000=91.5  κ(v1×v3)=0.815  alarm signals=2 → ALARM
+dose=60%  naive=45.40%  分歧/1000=99.8  κ(v1×v3)=0.797  alarm signals=2 → ALARM
+dose=80%  naive=48.38%  分歧/1000=124.2  κ(v1×v3)=0.740  alarm signals=2 → ALARM
+dose=100%  naive=50.98%  分歧/1000=149.7  κ(v1×v3)=0.690  alarm signals=2 → ALARM
+""
+Notes: (1) the HR distortion curve is not included (dose-wise Cox refitting would be required); (2) the n-gram shift signal is not included (8 of 9 signals already cover the agreement and style families); (3) the dose experiment uses real 2023 records as drift material, not synthetic perturbation.

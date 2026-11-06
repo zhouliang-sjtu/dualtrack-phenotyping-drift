@@ -1,0 +1,26 @@
+﻿=== Absolute misclassification burden (stratified weighting) ===
+ year  n_texts  naive_abn_n  naive_abn_pct  explicit_abn_n  explicit_abn_pct  prevalence_shift_pp  diverge_A1B0  diverge_A0B1  diverge_per_1000
+ 2018    14456         6502          44.98            5471             37.85                -7.13          1031             0              71.3
+ 2019    16379         6563          40.07            5644             34.46                -5.61           919             0              56.1
+ 2020    16098         6279          39.00            5775             35.87                -3.13           504             0              31.3
+ 2021    15576         5850          37.56            5373             34.50                -3.06           477             0              30.6
+ 2022    17256         8395          48.65            7035             40.77                -7.88          1360             0              78.8
+ 2023    21625        11066          51.17            7862             36.36               -14.82          3204             0             148.2
+ 2024    20717        11381          54.94            8433             40.71               -14.23          2948             0             142.3
+""
+2023 分歧核（A1B0，非unreadable）复算 = 3204（与 the deposited definition-alignment note 逐位一致：3
+Reconciliation (2026-09-21): rule-layer trace 2
+""
+                                   item                  value     unit                                                           source
+divergence_core_2023_A1B0_nonunreadable                   3204  records                                      v3 flags; full-library recomputation (this script, section 1)
+               rule_layer_rhythm_normal                   2828  records prespecified rule layer (pure rhythm → normal), applied as built
+                    panel_pool_residual                    376  records                                      divergence core minus rule layer (≈312 in an earlier estimate)
+                   s1_decision_sample_n                    100  records                                      100-record decision sample drawn by simple random sampling from the panel pool
+                        s1_panel_result 15 异常 / 76 正常 / 9 不可判读        -                                frozen 160-record adjudication panel (panel κ=0.985)
+             pool_misclassification_est                  319.6  records                                             376 × 0.85 (simple random-sampling weighting)
+              pool_misclassification_CI         [288.5
+           total_misclassification_2023                 3147.6  records                                                  rule layer (as built) + pool-weighted estimate
+        total_misclassification_2023_CI       [3116.5
+    misclassified_per_1000_reports_2023                  145.3 per 1000                                    total / 21,661 (production-corpus denominator) × 1000
+              misclassified_per_1000_CI         [143.9
+                   false_abnormal_share                   100%        -                  分歧核全部为 naive 判异常、裁定后 正常/不可判读（false abnormal 方向）

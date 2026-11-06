@@ -1,0 +1,5 @@
+dict_v2.py sha16=9b73a88b07d3f48a
+frozen=2026-09-26
+G2: ABD_HOSPITAL fatty PASS(directed) other 0.933 gallstone 0.882 kC 0.991 | ABD_PRIMARY fatty PASS(directed) other 0.920 gallstone CONDITIONAL 0.720 kC 1.000
+exemption: ABD_HOSPITAL_0101 20x20mm gold=0 vs ABD_HOSPITAL_0571 29x23mm gold=1 (H-site gold intra-inconsistency)
+outcome dev-obs vs panel v1.1: ABD_HOSPITAL k=0.487 ABD_PRIMARY k=0.443 (diagnostic only)

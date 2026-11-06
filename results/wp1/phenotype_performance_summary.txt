@@ -1,0 +1,29 @@
+﻿=== Final three-class phenotype performance (ECG domain, 570) ===
+gold ECG rows=570  arbitrated_rows=61
+ECG arbitration items: 26
+分歧单元格总数：29；其中 L1 逐变量裁定 + L2 存量案级裁定write-back：26；L3 rule-first 维持A1：3 → ['ecg_stt:ECG_0054'
+Extraction replay complete: 570 rows (unreadable=1)
+金标三分类 naive：{'A': 323
+金标三分类 explicit：{'A': 309
+抽取三分类 naive：{'A': 335
+抽取三分类 explicit：{'A': 310
+naive    overall  n= 570 κ3=0.957 sens_A=1.0 spec_A=0.9514 f1_N=0.975 f1_U=1.0
+naive    2018     n=  76 κ3=1.000 sens_A=1.0 spec_A=1.0 f1_N=1.0 f1_U=None
+naive    2019     n=  78 κ3=1.000 sens_A=1.0 spec_A=1.0 f1_N=1.0 f1_U=None
+naive    2020     n=  79 κ3=1.000 sens_A=1.0 spec_A=1.0 f1_N=1.0 f1_U=None
+naive    2021     n=  83 κ3=1.000 sens_A=1.0 spec_A=1.0 f1_N=1.0 f1_U=None
+naive    2022     n=  71 κ3=0.970 sens_A=1.0 spec_A=0.9643 f1_N=0.9818 f1_U=None
+naive    2023     n=  82 κ3=0.900 sens_A=1.0 spec_A=0.8824 f1_N=0.9355 f1_U=1.0
+naive    2024     n= 101 κ3=0.837 sens_A=1.0 spec_A=0.7941 f1_N=0.8852 f1_U=None
+explicit overall  n= 570 κ3=0.997 sens_A=1.0 spec_A=0.9962 f1_N=0.9981 f1_U=1.0
+explicit 2018     n=  76 κ3=1.000 sens_A=1.0 spec_A=1.0 f1_N=1.0 f1_U=None
+explicit 2019     n=  78 κ3=1.000 sens_A=1.0 spec_A=1.0 f1_N=1.0 f1_U=None
+explicit 2020     n=  79 κ3=1.000 sens_A=1.0 spec_A=1.0 f1_N=1.0 f1_U=None
+explicit 2021     n=  83 κ3=1.000 sens_A=1.0 spec_A=1.0 f1_N=1.0 f1_U=None
+explicit 2022     n=  71 κ3=0.972 sens_A=1.0 spec_A=0.9697 f1_N=0.9846 f1_U=None
+explicit 2023     n=  82 κ3=1.000 sens_A=1.0 spec_A=1.0 f1_N=1.0 f1_U=1.0
+explicit 2024     n= 101 κ3=1.000 sens_A=1.0 spec_A=1.0 f1_N=1.0 f1_U=None
+""
+—— Cross-check anchors ——
+{'gold_rows': 570
+Note: flag-level kappa cross-checks against the deposited ECG agreement table (v3 replay vs final reference standard, at flag level)

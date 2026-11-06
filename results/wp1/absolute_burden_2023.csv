@@ -1,0 +1,13 @@
+﻿item,value,unit,source
+divergence_core_2023_A1B0_nonunreadable,3204,records,"v3 flags; full-library recomputation (this script, section 1)"
+rule_layer_rhythm_normal,2828,records,"prespecified rule layer (pure rhythm → normal), applied as built"
+panel_pool_residual,376,records,divergence core minus rule layer (376; an earlier estimate of 312 is superseded)
+s1_decision_sample_n,100,records,100-record decision sample drawn by simple random sampling from the panel pool
+s1_panel_result,15 异常 / 76 正常 / 9 不可判读,-,frozen 160-record adjudication panel (panel κ=0.985)
+pool_misclassification_est,319.6,records,376 × 0.85 (simple random-sampling weighting)
+pool_misclassification_CI,"[288.5, 341.0]",records,Wilson 95% CI from the 100-record decision sample applied to the pool-weighted estimate
+total_misclassification_2023,3147.6,records,规则层（按构建）+ 池加权估计
+total_misclassification_2023_CI,"[3116.5, 3169.0]",records,同上合并
+misclassified_per_1000_reports_2023,145.3,per 1000,"total / 21,661 (production-corpus denominator) × 1000"
+misclassified_per_1000_CI,"[143.9, 146.3]",per 1000,同上
+false_abnormal_share,100%,-,分歧核全部为 naive 判异常、裁定后 正常/不可判读（false abnormal 方向）

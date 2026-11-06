@@ -1,0 +1,14 @@
+﻿=== 2023 divergent decomposition ===
+Anchor recomputation: divergent = 3
+Stratum decomposition: rule layer 2
+Exposure contrast (per 1,000): exposed 133.4 vs non-exposed 144.9 vs first examination 170.2 — no enrichment in the exposed group
+                        stratum  n_texts  naive_abn_n  explicit_abn_n  divergent_n  divergent_per_1000  rule_layer_rhythm_n  panel_pool_n
+Overall (2023
+       Prior-wave MASLD exposed     6093         3036            2223          813               133.4                  726            87
+         Prior-wave non-exposed     9991         5083            3635         1448               144.9                 1241           207
+   No prior wave (first record)     5541         2947            2004          943               170.2                  861            82
+""
+Driving mechanism (2023, observed): 3
+""
+Reading (manuscript note): 3
+DONE

@@ -1,0 +1,4 @@
+year,n_alarm_signals,signal_family,strongest_z,detail
+2022,3,style,15.07,inline_enum z=9.07 / ecg_prefix z=15.07 / ngram z=9.44
+2023,2,consistency,-4.71,agreement z=-4.62 / kappa z=-4.71
+2024,3,consistency+rate,-4.3,agreement z=-4.27 / kappa z=-4.3 / posrate_v3 z=3.15
